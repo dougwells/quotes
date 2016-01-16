@@ -10,10 +10,12 @@
   //     console.log(data);
   // });
     $.ajax({
-      url: 'https://dl.dropboxusercontent.com/s/p5zx9nv7qpyexnc/quotes.json',
+      url: 'https://dl.dropboxusercontent.com/s/tuw00mbytzzsmaw/quotes2.json',
+      // url: 'https://dl.dropboxusercontent.com/s/p5zx9nv7qpyexnc/quotes.json',
       dataType: 'json',
       success: function(data) {
-          console.log(data.steveJobQuotes[0].quote);
+        console.log(data);
+          // console.log(data.steveJobQuotes[0].quote);
       },
       error: function(e) {
           console.log('Error!', e);

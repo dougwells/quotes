@@ -1,5 +1,5 @@
 {
-  "steveJobQuotes":[
+  "quotes": [
     {
       "id":1,
       "quote": "A penny saved is a penny earned",
@@ -18,4 +18,5 @@
       "imageFileName": "stitch.jpg"
     }
   ]
+
 }
