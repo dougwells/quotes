@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JSON with jQuery</title>
+  </head>
+  <body>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+  //   $.getJSON('https://dl.dropboxusercontent.com/s/p5zx9nv7qpyexnc/quotes.json', function(data){
+  //     console.log(data);
+  // });
+    $.ajax({
+      url: 'https://dl.dropboxusercontent.com/s/p5zx9nv7qpyexnc/quotes.json',
+      dataType: 'json',
+      success: function(data) {
+          console.log(data.steveJobQuotes[0].quote);
+      },
+      error: function(e) {
+          console.log('Error!', e);
+      }
+    });
+    </script>
+    <h1>hello world</h1>
+  </body>
+<html>
