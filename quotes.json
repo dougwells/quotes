@@ -2,18 +2,26 @@
     {
       "id":1,
       "quote": "Stay young, stay foolish",
-      "imageFileName": "youngFoolish.jpg"
+      "imageUrl": "youngFoolish.jpg"
     },
 
     {
       "id":2,
       "quote": "Simple is harder than complex",
-      "imageFileName": "simple.jpb"
+      "imageUrl": ""
     },
 
     {
       "id":3,
       "quote": "Your work is sh@!t",
-      "imageFileName": "sht.jpg"
+      "imageUrl": "sht.jpg"
+    },
+
+    {
+      "id":4,
+      "quote": "Death is natures greatest invention ... it keeps everything in perspective",
+      "imageUrl": "https://dl.dropboxusercontent.com/s/22vlgr868owwr2y/man_on_the_mountain.jpg"
     }
+
+
   ]

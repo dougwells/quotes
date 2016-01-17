@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>JSON with jQuery</title>
+    <title>Quotes</title>
+    <!-- Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script>
-  //   $.getJSON('https://dl.dropboxusercontent.com/s/p5zx9nv7qpyexnc/quotes.json', function(data){
-  //     console.log(data);
-  // });
+    <div class = 'container'>
+      <div class="row">
+        <h3><em>hello test</em></h3>
+        <button href='#' class='btn-lg btn-primary'>New Quote</button>
+      </div>
+      <div class="row">
+        <img src ="">
+      </div>
+  </div>
+
+<!-- Loads jQuery  -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- Ease-in/Out Effect -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<!-- Loads main JS file -->
+<script src="js/main.js"></script>
+
+<script> //replaces text for quote & changes background image
+  $(document).ready(function() {
     $.ajax({
       url: 'https://dl.dropboxusercontent.com/s/p5zx9nv7qpyexnc/quotes.json',
       dataType: 'json',
       success: function(data) {
-        document.write(
-          "<h2>Steve would say ... '<em>"
-        +data[0].quote+
-        "'</em></h2><h3>Second Line</h3>"
-      );
+        var steveQuote = data[3].quote;
+        var imageUrl = data[3].imageUrl;
+        $("em").text("'"+steveQuote+"'");
+        $('img').attr("src", imageUrl)
+        console.log(steveQuote);
+        console.log(imageUrl);
       },
-      error: function(e) {
-        document.write(
-          "<h2>Steve would say ... <em>'This app is shit'<em></h2>"+
-          "<h3>ERROR</h3>"
-      );
+      error: function(err) {
+        var steveQuote = "This app is shit!  You have an error. Error Message: "+ err;
+        $("em").text(steveQuote);
+        console.log(steveQuote);
       }
     });
-    </script>
-    <h1>hello world</h1>
+  });
+</script>
   </body>
-<html>
+</html>
