@@ -10,15 +10,20 @@
   //     console.log(data);
   // });
     $.ajax({
-      url: 'https://dl.dropboxusercontent.com/s/tuw00mbytzzsmaw/quotes2.json',
-      // url: 'https://dl.dropboxusercontent.com/s/p5zx9nv7qpyexnc/quotes.json',
+      url: 'https://dl.dropboxusercontent.com/s/p5zx9nv7qpyexnc/quotes.json',
       dataType: 'json',
       success: function(data) {
-        console.log(data);
-          // console.log(data.steveJobQuotes[0].quote);
+        document.write(
+          "<h2>Steve would say ... '<em>"
+        +data[0].quote+
+        "'</em></h2><h3>Second Line</h3>"
+      );
       },
       error: function(e) {
-          console.log('Error!', e);
+        document.write(
+          "<h2>Steve would say ... <em>'This app is shit'<em></h2>"+
+          "<h3>ERROR</h3>"
+      );
       }
     });
     </script>

@@ -1,21 +1,19 @@
-{
-  "steveJobQuotes":[
+[
     {
       "id":1,
-      "quote": "A penny saved is a penny earned",
-      "imageFileName": "penny.jpg"
+      "quote": "Stay young, stay foolish",
+      "imageFileName": "youngFoolish.jpg"
     },
 
     {
       "id":2,
-      "quote": "Here's to you kid",
-      "imageFileName": "bogart.jpg"
+      "quote": "Simple is harder than complex",
+      "imageFileName": "simple.jpb"
     },
 
     {
       "id":3,
-      "quote": "A stich in time saves nine",
-      "imageFileName": "stitch.jpg"
+      "quote": "Your work is sh@!t",
+      "imageFileName": "sht.jpg"
     }
   ]
-}
