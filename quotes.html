@@ -6,46 +6,191 @@
     <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href="css/main.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+    p {
+             text-align:justify;
+        text-justify:inter-word;
+    }
+
+    .carousel-inner{height:600px;}
+    .item > img {
+      min-width:100%;
+      height:600px;
+
+       background-position:center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .panel {
+      background-color: #FFFFFF;
+      color: #666;
+      padding: 15px;
+      position: relative;
+      -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+      min-height: 480px;
+      overflow: hidden;
+      margin: 10px;
+    }
+    .panel-small  {
+      min-height: 280px;
+    }
+    .panel:hover {
+      background-color: #eee;
+    }
+
+
+
+    .carousel-inner > .item {
+        -webkit-transition: 0.3s ease-in-out left;
+        -moz-transition: 0.3s ease-in-out left;
+        -o-transition: 0.3s ease-in-out left;
+        transition: 0.3s ease-in-out left;
+    }
+
+    .carousel-control {
+      z-index: 49;
+    }
+    .carousel-caption {
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       top: 0px;
+       left: 0px;
+       margin:0 auto;
+       text-align:center;
+       background-color: #000;
+       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+       filter: alpha(opacity=70);
+       -moz-opacity: 0.7;
+      -khtml-opacity: 0.7;
+      opacity: 0.7;
+    }
+
+    .carousel-caption .qod-title,
+    .carousel-caption .lead {
+       position: relative;
+       max-width: 80%;
+       top: 150px;
+       padding: 0 20px;
+       margin:0 auto;
+       margin-top: 10px;
+       text-align:center;
+    }
+
+    .carousel-caption .qod-title {
+       font-weight: bold;
+    }
+
+    .carousel-caption .lead {
+       font-size: 24px;
+       font-weight: normal;
+    }
+
+    @media (max-width: 767px) {
+    	body {
+    		padding-left: 0;
+    		padding-right: 0;
+    	}
+
+    .carousel-inner{min-height:600px;}
+    .item > img {
+      min-width:100%;
+      min-height:600px;
+      background-position:center;
+    }
+         .carousel-caption .qod-title ,
+         .carousel-caption .lead {
+            padding-right:  20px;
+            padding-left:  10px;
+            margin-top: 0px;
+          }
+
+    .carousel-caption .lead {
+       position: relative;
+       max-width: 90%;
+       top: 150px;
+    }
+    .carousel-caption .qod-title
+    {
+            width: 98%;
+    }
+    }
+
+
+
+
+    </style>
+
   </head>
   <body>
-    <div class = 'container'>
-      <div class="row">
-        <h3><em>hello test</em></h3>
-        <button href='#' class='btn-lg btn-primary'>New Quote</button>
-      </div>
-      <div class="row">
-        <img src ="">
-      </div>
-  </div>
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="https://dl.dropboxusercontent.com/s/wqs3qpw8g1tubk1/steve-woz-young.jpg" alt="Inspiring Quote of the day">
+          <div class="container">
+            <div class="carousel-caption">
+             <h2 class="qod-title"><a href="/qod/inspire" title="Inspiring Quote of the day" class="qod-link">Inspiring Quote of the day</a></h2>
+             <div class="lead">
+               <a href="/quote/sNXyrY0txbghYFnZlpDojweF" title="Don't go through life, grow through life." class="qod-link">
+                 <span>Don't go through life, grow through life.</span>
+               </a>
+               <a href="/author/Eric Butterworth" class="qod-link" title="See Other quotes by Eric Butterworth" target="_blank"><span>Eric Butterworth</span>
+               </a>
+             </div>
+            </div><!--/carousel-caption-->
+          </div><!--/container-->
+        </div><!--/item-->
+      </div><!--carousel-inner-->
+    </div><!--myCarousel-->
 
-<!-- Loads jQuery  -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<!-- Ease-in/Out Effect -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<!-- Loads main JS file -->
-<script src="js/main.js"></script>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img id="quoteImage" src="https://dl.dropboxusercontent.com/s/wqs3qpw8g1tubk1/steve-woz-young.jpg" alt="Image for Quote" height="512" width="1024">
+                        <div class="carousel-caption">
+                          <h1><em>Stay young.  Stay foolish.</em></h1>
+                          <button class="btn btn-lg btn-primary" href="#">New Quote</button>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<script> //replaces text for quote & changes background image
-  $(document).ready(function() {
-    $.ajax({
-      url: 'https://dl.dropboxusercontent.com/s/p5zx9nv7qpyexnc/quotes.json',
-      dataType: 'json',
-      success: function(data) {
-        var steveQuote = data[3].quote;
-        var imageUrl = data[3].imageUrl;
-        $("em").text("'"+steveQuote+"'");
-        $('img').attr("src", imageUrl)
-        console.log(steveQuote);
-        console.log(imageUrl);
-      },
-      error: function(err) {
-        var steveQuote = "This app is shit!  You have an error. Error Message: "+ err;
-        $("em").text(steveQuote);
-        console.log(steveQuote);
-      }
-    });
-  });
-</script>
+    <div class="quotes-image">
+          <img src="https://dl.dropboxusercontent.com/s/lzipvmm8cqu6zut/swim.jpg" alt="Image for Quote">
+          <div class='quotes'>
+              <h1><em>Stay young.  Stay foolish.</em></h1>
+              <button class="btn btn-lg btn-primary" href="#">New Quote</button>
+          </div>
+    </div>
+
+
+    <!-- Loads jQuery  -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Ease-in/Out Effect -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- Loads main JS file -->
+    <script src="js/main.js"></script>
   </body>
 </html>

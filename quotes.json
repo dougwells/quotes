@@ -2,25 +2,31 @@
     {
       "id":1,
       "quote": "Stay young, stay foolish",
-      "imageUrl": "youngFoolish.jpg"
+      "imageUrl": "https://dl.dropboxusercontent.com/s/wqs3qpw8g1tubk1/steve-woz-young.jpg"
     },
 
     {
       "id":2,
       "quote": "Simple is harder than complex",
-      "imageUrl": ""
+      "imageUrl": "https://dl.dropboxusercontent.com/s/n7066mihk1pypy0/simple-harder-complex.png"
     },
 
     {
       "id":3,
-      "quote": "Your work is sh@!t",
-      "imageUrl": "sht.jpg"
+      "quote": "Your work is shit!",
+      "imageUrl": "https://dl.dropboxusercontent.com/s/5ris4qilrskw5mr/sucks.jpg"
     },
 
     {
       "id":4,
       "quote": "Death is natures greatest invention ... it keeps everything in perspective",
-      "imageUrl": "https://dl.dropboxusercontent.com/s/22vlgr868owwr2y/man_on_the_mountain.jpg"
+      "imageUrl": "https://dl.dropboxusercontent.com/s/jkfbh02xbg448fy/death.jpg"
+    },
+
+    {
+      "id":5,
+      "quote": "LSD is the single most important thing I have ever done ...",
+      "imageUrl": "https://dl.dropboxusercontent.com/s/tcsbus8jtfdoa37/lsdQuote.jpg"
     }
 
 
