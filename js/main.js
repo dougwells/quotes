@@ -1,8 +1,10 @@
-
-
-
-
 $(document).ready(function () {
+
+  //Center images by dynamically changing margins
+  var conHeight = $(".homeImageImage").height();
+  var imgHeight = $(".homeImageImage img").height();
+  var gap = (imgHeight - conHeight)/2;
+  $(".homeImageImage img").css("margin-top",-gap);
 
   //Download new quote & image URL from json datafile stored in my dropbox
   //Replaces existing quote and image on webpage
@@ -26,10 +28,5 @@ $(document).ready(function () {
         console.log(steveQuote);
       }
     });
-  });
-
-  //hide hamburger menu once clicked ...
-  $(".navbar-nav li a").click(function(event) {
-    $(".navbar-collapse").collapse('hide');
   });
 });
