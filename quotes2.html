@@ -12,37 +12,35 @@
 
 
   <style>
-    .img-container {
+    .img-caption-container {
       position:relative;
-      /*height: 100vh;*/
-      /*width:100%;*/
+      height: 50vw;
+      width:100%;
+      overflow: hidden;
     }
 
-    .homeImageImage {
+    .img-caption-img {
        position: absolute;
        top: 0px;
        left: 0px;
-       height: 100vh;
-       width: 100%;
-       overflow: hidden;
-     }
-
-     .homeImageImage img{
-       position: absolute;
-       /*height: 100%;*/
        width: 100%;
      }
 
-    .homeImageLink {
-       position: absolute;
-       top: 10%;
-       /*top: 100px;*/
-       width: 100%;
-       margin: 0 auto;
-       text-align: center;
-       color: red;
-       z-index: 2;
-    }
+     .img-caption-img img{
+        width: 100%;
+      }
+
+
+     .img-caption-caption {
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        color: red;
+        z-index: 2;
+      }
 
   </style>
 </head>
@@ -50,16 +48,15 @@
 <body>
 
   <div class = "row">
-    <div class="img-container">
-
-      <div class="homeImageLink">
+    <div class="img-caption-container">
+      <div class="img-caption-caption">
         <h1><em>Stay young.  Stay foolish.</em></h1>
         <button class="btn btn-lg btn-primary" href="#">New Quote</button>
         <h1>This is a heading.  Full page2?</h1>
         <p>This is the text of a paragraph</p>
       </div>
 
-      <div class="homeImageImage">
+      <div class="img-caption-img">
         <img src="https://dl.dropboxusercontent.com/s/lzipvmm8cqu6zut/swim.jpg" alt="Image for Quote"
       </div>
 
