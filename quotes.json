@@ -2,31 +2,41 @@
     {
       "id":1,
       "quote": "Stay young, stay foolish",
-      "imageUrl": "https://dl.dropboxusercontent.com/s/wqs3qpw8g1tubk1/steve-woz-young.jpg"
+      "imageUrl": "https://dl.dropboxusercontent.com/s/wqs3qpw8g1tubk1/steve-woz-young.jpg",
+      "imageColor": "dark",
+      "author": "Steve Jobs"
     },
 
     {
       "id":2,
       "quote": "Simple is harder than complex",
-      "imageUrl": "https://dl.dropboxusercontent.com/s/n7066mihk1pypy0/simple-harder-complex.png"
+      "imageUrl": "https://dl.dropboxusercontent.com/s/n7066mihk1pypy0/simple-harder-complex.png",
+      "imageColor": "dark",
+      "author": "Steve Jobs"
     },
 
     {
       "id":3,
       "quote": "Your work is shit!",
-      "imageUrl": "https://dl.dropboxusercontent.com/s/5ris4qilrskw5mr/sucks.jpg"
+      "imageUrl": "https://dl.dropboxusercontent.com/s/5ris4qilrskw5mr/sucks.jpg",
+      "imageColor": "dark",
+      "author": "Steve Jobs"
     },
 
     {
       "id":4,
       "quote": "Death is natures greatest invention ... it keeps everything in perspective",
-      "imageUrl": "https://dl.dropboxusercontent.com/s/jkfbh02xbg448fy/death.jpg"
+      "imageUrl": "https://dl.dropboxusercontent.com/s/jkfbh02xbg448fy/death.jpg",
+      "imageColor": "dark",
+      "author": "Steve Jobs"
     },
 
     {
       "id":5,
       "quote": "LSD is the single most important thing I have ever done ...",
-      "imageUrl": "https://dl.dropboxusercontent.com/s/tcsbus8jtfdoa37/lsdQuote.jpg"
+      "imageUrl": "https://dl.dropboxusercontent.com/s/tcsbus8jtfdoa37/lsdQuote.jpg",
+      "imageColor": "light",
+      "author": "Steve Jobs"
     }
 
 
