@@ -17,14 +17,6 @@
 
     {
       "id":3,
-      "quote": "Your work is shit!",
-      "imageUrl": "https://dl.dropboxusercontent.com/s/5ris4qilrskw5mr/sucks.jpg",
-      "imageColor": "dark",
-      "author": "Steve Jobs"
-    },
-
-    {
-      "id":4,
       "quote": "Death is natures greatest invention ... it keeps everything in perspective",
       "imageUrl": "https://dl.dropboxusercontent.com/s/jkfbh02xbg448fy/death.jpg",
       "imageColor": "dark",
@@ -32,7 +24,7 @@
     },
 
     {
-      "id":5,
+      "id":4,
       "quote": "LSD is the single most important thing I have ever done ...",
       "imageUrl": "https://dl.dropboxusercontent.com/s/tcsbus8jtfdoa37/lsdQuote.jpg",
       "imageColor": "light",

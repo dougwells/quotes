@@ -1,6 +1,18 @@
-body {
-  margin: 0;
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
+body {
+   font-family: 'Josefin Slab', serif;
+   font-weight: 400;
+   letter-spacing: 1px;
+   font-size: 16px;
+   background-color: #f4f4f4;
+   margin: 0;
+}
+
 
 .img-caption-container {
   position:relative;
@@ -8,14 +20,16 @@ body {
   width:100%;
   display: block;
   background-color: #333333;
+  overflow: hidden;
+
 }
 
 .img-caption-img {
    position: absolute;
    top: 0px;
    left: 0px;
-   height: 100%;
-   /*width: 100%;*/
+   width: 100%;
+   opacity: 0.4;
  }
 
  .img-caption-header{
@@ -24,19 +38,48 @@ body {
    width: 100%;
    z-index: 1;
    display: inline-block;
-
  }
 
  .img-caption-caption {
     position: absolute;
-    top: 33%;
+    top: 40%;
     left: 0px;
     width: 100%;
+    padding: 0 20px;
     margin: 0 auto;
     text-align: center;
-    color: red;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #eeeeee;
+    font-weight: bold;
+    line-height: 1.1;
     z-index:1;
   }
+
+  .img-caption-caption h2, .img-caption-caption p {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+
+  .img-caption-caption h2:hover, .img-caption-caption p:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgba(38,165,211, 1);
+    transition: all 0.5s ease-in;
+  }
+
+  @media (max-width: 500px) {
+      .img-caption-caption {
+       top: 150px;
+     }
+      .img-caption-caption h2{
+        font-size: 18px;
+      }
+      .img-caption-caption p{
+        font-size: 14px;
+      }
+    }
 
   /*Elements*/
   .fa-custom {
@@ -64,8 +107,8 @@ body {
       letter-spacing: 1px;
     border: 1px solid #fff;
     border-radius: 8px;
-    z-index: 3;
     transition: all 0.3s ease-out;
+    z-index: 2;
   }
 
   .semi-trasparent-button button {
@@ -73,11 +116,20 @@ body {
   }
 
   .semi-transparent-button:hover,
-  .semi-transparent-button:focus {
+  .semi-transparent-button:active {
     background: rgba(255, 255, 255, 0.7);
     color: rgba(38,165,211, 1);
     transition: all 0.5s ease-in;
   }
+
+  @media (max-width: 500px) {
+    .semi-transparent-button{
+      max-width: 60px;
+    }
+
+    .semi-transparent-button span {
+      display: none;
+    }
 
 /*Green Fade to semi-transparent button*/
   .green-fade-button {
