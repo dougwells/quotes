@@ -93,5 +93,13 @@
     "imageUrl": "https://dl.dropboxusercontent.com/s/fzmqo87d9m9x4el/sfo.jpg",
     "imageColor": "light",
     "author": "Warren Buffett"
-  }
+  },
+
+  {
+    "id":"13",
+    "quote": "Choose based on what makes it easy to be the best version of yourself.",
+    "imageUrl": "https://dl.dropboxusercontent.com/s/lzipvmm8cqu6zut/swim.jpg",
+    "imageColor": "light",
+    "author": "Doug Wells"
+  }  
   ]

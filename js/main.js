@@ -19,9 +19,9 @@ $(document).ready(function() {
         $('#quote').text("'"+quote+"'");
         $('#quote-image').attr("src", imageUrl);
         $('#author').text('Author: '+author);
-        $("#shareTwitter").attr("href", twitterQueryString)
+        $("#shareTwitter").attr("href", twitterQueryString);
         console.log(twitterPost);
-        console.log(twitterPost.length);
+        console.log(twitterQueryString);
         console.log(twitterPost140);
         console.log(twitterPost140.length);
       },

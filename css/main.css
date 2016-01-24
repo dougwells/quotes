@@ -74,14 +74,6 @@ body {
            top: 60%;
            font-size: 1.0em;
          }
-          .img-caption-caption h2{
-            /*font-siz: 1.2em;*/
-            /*font-size: 28px;*/
-          }
-          .img-caption-caption p{
-            /*font-size: 1.2em;*/
-            /*font-size: 22px;*/
-          }
         }
 
         @media (max-width: 600px) {
@@ -89,12 +81,6 @@ body {
              top: 60%;
              font-size: 0.8em;
            }
-            .img-caption-caption h2{
-              /*font-size: 18px;*/
-            }
-            .img-caption-caption p{
-              /*font-size: 14px;*/
-            }
           }
 
   /*Elements*/
@@ -137,6 +123,10 @@ body {
     color: rgba(38,165,211, 1);
     transition: all 0.5s ease-in;
   }
+
+  #shareTwitter, #newQuote {
+  text-decoration: none;
+}
 
   @media (max-width: 678px) {
     .semi-transparent-button{
